@@ -1,0 +1,14 @@
+package kotlinx.coroutines;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
+import com.google.android.gms.measurement.api.AppMeasurementSdk;
+import kotlin.Metadata;
+
+/* compiled from: MultithreadedDispatchers.common.kt */
+@Metadata(m942d1 = {"\u0000\u0014\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u001a\u0019\u0010\u0000\u001a\u00060\u0002j\u0002`\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\u0007¢\u0006\u0002\u0010\u0005¨\u0006\u0006"}, m943d2 = {"newSingleThreadContext", "Lkotlinx/coroutines/CloseableCoroutineDispatcher;", "Lkotlinx/coroutines/ExecutorCoroutineDispatcher;", AppMeasurementSdk.ConditionalUserProperty.NAME, "", "(Ljava/lang/String;)Lkotlinx/coroutines/ExecutorCoroutineDispatcher;", "kotlinx-coroutines-core"}, m944k = 5, m945mv = {2, 0, 0}, m947xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE, m948xs = "kotlinx/coroutines/ThreadPoolDispatcherKt")
+/* loaded from: classes2.dex */
+final /* synthetic */ class ThreadPoolDispatcherKt__MultithreadedDispatchers_commonKt {
+    public static final ExecutorCoroutineDispatcher newSingleThreadContext(String str) {
+        return ThreadPoolDispatcherKt.newFixedThreadPoolContext(1, str);
+    }
+}

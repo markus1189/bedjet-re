@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:tag="layout/dialog_cannot_delete_0"
+    android:background="@color/primaryBlueDark"
+    android:padding="@dimen/padding_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:text="@string/dialog_cant_delete_text"
+        style="@style/DialogDescription"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_default"
+        android:weightSum="2">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialogCantDeleteButtonOk"
+            android:text="@string/btn_ok"
+            style="@style/BaseButtonStyle.Dialog"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
