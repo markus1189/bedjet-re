@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:tag="layout/dialog_old_app_0"
+    android:background="@color/primaryBlueDark"
+    android:padding="@dimen/padding_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:text="@string/dialog_old_app_title"
+        android:textAllCaps="true"
+        style="@style/DialogTitle"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginTop="@dimen/padding_default"
+        android:text="@string/dialog_old_app_message"
+        style="@style/DialogDescription"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_default"
+        android:weightSum="2">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialogOldAppButtonCancel"
+            android:text="@string/dialog_old_app_button_cancel"
+            android:layout_marginEnd="@dimen/padding_default"
+            style="@style/BaseButtonStyle.Dialog"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialogOldAppButtonSuccess"
+            android:text="@string/dialog_old_app_button_install"
+            style="@style/BaseButtonStyle.Dialog"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
